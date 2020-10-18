@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-photostudios"
+    }
+  },
+  "defaultProject": "ng-photostudios",
+  "cli": {
+    "analytics": "1b93883d-e4d4-473f-86bf-d0f11a1b4bac"
+  }
 }
