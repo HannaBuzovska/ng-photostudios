@@ -1,19 +1,10 @@
 <div style="background-color:#222222;">
 <div class="container">
-  <h1>Фотостудии в Днепре</h1>
+  <h1>{{ title }}</h1>
   <span>На сайте представлены студии для фотосессии, 
   находящиеся в пределах города Днепр. </span>
 </div>
 
 <div class="studios">
-  <app-studios></app-studios>
-  <app-emotion></app-emotion>
-  <app-moon-studio></app-moon-studio>
-  <app-visual-space></app-visual-space>
-  <app-light-studio></app-light-studio>
-  <app-london></app-london>
-  <app-home></app-home>
-  <app-simvolist></app-simvolist>
-  <app-inde-x></app-inde-x>
-</div>
+  <app-studios [studios]="studios"></app-studios>
 </div>
