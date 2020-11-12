@@ -1,0 +1,37 @@
+ <mat-horizontal-stepper>
+   
+  <mat-step>
+    <ng-template matStepLabel>Выберите дату</ng-template>
+    <div class="popup1">
+      <h1 mat-dialog-title>Когда у вас будет фотосессия?</h1>
+      <input onclick="this.disabled=1" matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </div> 
+    <button class="button2" matStepperNext>Далее</button>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Введите данные</ng-template>
+    <div class="popup">
+      <h1 mat-dialog-title>Заполните форму и мы с Вами свяжемся:</h1>
+      <div mat-dialog-content>
+        <mat-form-field>
+          <mat-label>Ваше имя</mat-label>
+          <input matInput [(ngModel)]="data.name">
+        </mat-form-field>
+      </div>
+      <div mat-dialog-content>
+         <mat-form-field>
+           <mat-label>Ваш телефон</mat-label>
+           <input matInput [(ngModel)]="data.phone">
+         </mat-form-field>
+       </div>
+        <button class="button" [mat-dialog-close]="data.name">Отправить</button>
+      </div>
+     <div>
+       <button class="button3" matStepperPrevious>Назад</button>
+     </div>
+  </mat-step>
+
+ </mat-horizontal-stepper>

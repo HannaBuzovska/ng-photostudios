@@ -1,42 +1,24 @@
 <ul>
-  <li *ngFor="let studio of studios"
-  [class.selected]="studio === selectedStudio">
+  <li *ngFor="let studio of studios">
 
   <div class="studios">
 
   <h2>
 
     <a>{{ studio.name }}</a>
-
     <img src='{{studio.photo}}'
     width="360" height="200">
-
+    
     <h4>Аренда фотостудии (1 час):</h4>
     <p>{{ studio.price}}</p>
 
-    <button class="button4" (click)="onSelect(studios)">Забронировать</button>
+    <popup></popup>
   </h2>
-    
-    <div *ngIf="selectedStudio">
-      
+  
     <a href="{{studio.address}}">{{studio.address}}</a>
     <a href="tel:{{studio.phone}}">{{studio.phone}}</a>
     <a href="{{studio.link}}">Узнать больше на сайте</a>
-
-    <h3>Заполните форму и мы с Вами свяжемся:</h3>
-    <div>
-      <h6>
-        <label>Ваше имя:
-          <input [(ngModel)]="selectedStudio.name" placeholder="Введите имя"/>
-        </label>
-      </h6>
-      <h6>
-        <label>Ваше имя:
-          <input [(ngModel)]="selectedStudio.name" placeholder="Введите имя"/>
-        </label>
-      </h6>
-        </div>
-  </div> 
-  </div>
+    
+    </div> 
   </li>
- </ul>
+</ul>

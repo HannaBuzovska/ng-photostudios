@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { link } from 'fs';
+import { Component,Input,OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Studio } from '../app.component';
+import { PopupDialog } from '../popup/popup';
 
 @Component({
   selector: 'app-studios',
@@ -9,14 +10,10 @@ import { Studio } from '../app.component';
 })
 export class StudiosComponent implements OnInit{
 
-  @Input() studios: Studio[] = []
-  selectedStudio:  Studio
+  @Input() studios: Studio[] = [];
 
   constructor() { }
 
   ngOnInit() {
-  }
-  onSelect(studio: Studio): void {
-    this.selectedStudio = studio;
   }
 }

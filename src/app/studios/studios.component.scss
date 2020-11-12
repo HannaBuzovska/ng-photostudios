@@ -14,19 +14,23 @@
 
    h2{ 
       letter-spacing: 2px;
+      font-family: 'Raleway', sans-serif;
    }
 
    p {
+      font-family: 'Raleway', sans-serif;
       font-size: medium;
       margin-bottom: 1rem;
    }
    
    img {
+      font-family: 'Raleway', sans-serif;
       float: left;
       margin: 0px -50px 0px 70px;
    }
 
    a {
+      font-family: 'Raleway', sans-serif;
       color: black;
       text-decoration: none;
       padding-left: 4rem;
@@ -34,53 +38,18 @@
    }
 
    h4 {
+      font-family: 'Raleway', sans-serif;
       font-size: medium;
       margin-top: 50px;
    }
 
    div{
+    font-family: 'Raleway', sans-serif;
     margin-top: 3rem;
   }
 
-  h3{
+    h3{
+    font-family: 'Raleway', sans-serif;
     margin-top: 40px;
   }
-
-
-  button.button4 {
-   position: relative;
-   display: inline-block;
-   font-family: 'Raleway', sans-serif;
-   font-size: 1rem;
-   font-weight: 700;
-   color: black(977,977,977);
-   text-shadow: 0 1px rgba(0,0,0,.1);
-   text-decoration: none;
-   user-select: none;
-   padding: 0.5rem 0.5rem;
-   outline: none;
-   border: none;
-   border-radius: 10rem;
-   background: #f7f7f7;
-  
-   -webkit-animation: pulsate 1s linear infinite;
-   animation: pulsate 2s linear infinite;
- }
- button.button4:hover {
-   -webkit-animation-play-state: paused;
-   animation-play-state: paused;
-   cursor: pointer;
- }
- button.button4:active {
-   top: 0px;
-   color: #fff;
-   text-shadow: 0 0px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
-   box-shadow: 0 0px 0px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
- }
- @-webkit-keyframes pulsate {
-   40% {color: #fff; text-shadow: 0 0px rgba(0,0,0,.3), 0 0 0px #ffd, 0 0 0px #fff;}
- }
- @keyframes pulsate {
-   20% {color: #fff; text-shadow: 0 0px rgba(0,0,0,.3), 0 0 0px #ffd, 0 0 0px #fff;}
- }
 }
