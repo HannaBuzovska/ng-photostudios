@@ -1,24 +1,17 @@
 <ul>
   <li *ngFor="let studio of studios">
-
-  <div class="studios">
-
-  <h2>
-
-    <a>{{ studio.name }}</a>
-    <img src='{{studio.photo}}'
-    width="360" height="200">
-    
-    <h4>Аренда фотостудии (1 час):</h4>
-    <p>{{ studio.price}}</p>
-
-    <popup></popup>
-  </h2>
-  
-    <a href="{{studio.address}}">{{studio.address}}</a>
-    <a href="tel:{{studio.phone}}">{{studio.phone}}</a>
-    <a href="{{studio.link}}">Узнать больше на сайте</a>
-    
+    <div class="studios">
+      <img src='{{studio.photo}}'
+        width="360" height="200">
+    </div>
+    <div class="studiosText">
+      <h1>{{ studio.name }}</h1>
+      <a href="{{studio.address}}">{{studio.address}}</a>
+      <a href="tel:{{studio.phone}}">{{studio.phone}}</a>
+      <a href="{{studio.link}}">Узнать больше на сайте</a>
+      <h4>Аренда фотостудии (1 час):</h4>
+      <p>{{ studio.price}}</p>
+      <popup></popup>
     </div> 
   </li>
 </ul>

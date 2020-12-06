@@ -14,13 +14,11 @@ export interface PopupData {
   styleUrls: ['popup.scss']
 })
 export class Popup {
-  
   phone: string;
   name: string;
 
   ngOnInit() {
   }
-  
     constructor(public dialog: MatDialog) {}
   
     openDialog(): void {
@@ -29,8 +27,7 @@ export class Popup {
         width: '600px',
         data: {name: this.name, phone: this.phone}
       });
-  
-      dialogRef.afterClosed().subscribe(result => {
+        dialogRef.afterClosed().subscribe(result => {
         console.log('The dialog was closed');
         this.name = result;
       });
@@ -43,7 +40,6 @@ export class Popup {
   styleUrls: ['popup.scss']
 })
 export class PopupDialog {
-
   constructor(
     public dialogRef: MatDialogRef<PopupDialog>,
     @Inject(MAT_DIALOG_DATA) public data: PopupData) {}

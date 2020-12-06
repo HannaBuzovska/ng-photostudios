@@ -9,9 +9,8 @@ import { PopupDialog } from '../popup/popup';
   styleUrls: ['./studios.component.scss']
 })
 export class StudiosComponent implements OnInit{
-
   @Input() studios: Studio[] = [];
-
+  
   constructor() { }
 
   ngOnInit() {

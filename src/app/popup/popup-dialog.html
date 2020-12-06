@@ -1,5 +1,4 @@
- <mat-horizontal-stepper>
-   
+<mat-horizontal-stepper>
   <mat-step>
     <ng-template matStepLabel>Выберите дату</ng-template>
     <div class="popup1">
@@ -26,12 +25,11 @@
            <mat-label>Ваш телефон</mat-label>
            <input matInput [(ngModel)]="data.phone">
          </mat-form-field>
-       </div>
+      </div>
         <button class="button" [mat-dialog-close]="data.name">Отправить</button>
       </div>
-     <div>
+      <div>
        <button class="button3" matStepperPrevious>Назад</button>
-     </div>
+      </div>
   </mat-step>
-
- </mat-horizontal-stepper>
+</mat-horizontal-stepper>

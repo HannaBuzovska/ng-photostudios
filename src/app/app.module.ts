@@ -8,7 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DemoMaterialModule } from './popup/material-module';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Popup, PopupDialog } from './popup/popup';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 @NgModule({
@@ -26,10 +26,21 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
     HttpClientModule,
     DemoMaterialModule,
     MatNativeDateModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  entryComponents: [Popup, PopupDialog],
-  providers: [ { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },],
-  bootstrap: [AppComponent]
+
+  entryComponents: [
+    Popup,
+    PopupDialog
+  ],
+
+  providers: [
+   { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
+  ],
+
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
